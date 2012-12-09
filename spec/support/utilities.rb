@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 include ApplicationHelper
 
 def valid_signin(user)
@@ -21,6 +20,3 @@ def sign_in(user)
    # Sign in when not using Capybara as well.
   cookies[:remember_token] = user.remember_token
 end
-=======
-include ApplicationHelper
->>>>>>> parent of 3e996d5... Finish sign in
