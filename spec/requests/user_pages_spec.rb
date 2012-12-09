@@ -34,6 +34,7 @@ describe "User pages" do
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       describe "after saving the user" do
         before { click_button submit }
         
@@ -42,6 +43,10 @@ describe "User pages" do
         it { should have_selector('title', text: user.name) }
         it { should have_selector('div.alert.alert-success', text: 'Welcome') }
         it { should have_link('Sign out') }
+=======
+      it "should create a user" do
+        expect { click_button submit }.to change(User, :count).by(1)
+>>>>>>> parent of 3e996d5... Finish sign in
 =======
       it "should create a user" do
         expect { click_button submit }.to change(User, :count).by(1)
